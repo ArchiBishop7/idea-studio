@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f4">
+  <title>Idea Studio — a little space to find your direction</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <div id="mode-banner" class="mode-banner"></div>
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M18 30V17M18 22C7 22 7 12 7 8c7 0 12 5 11 14ZM18 17C18 7 25 5 30 5c0 8-5 12-12 12Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Idea Studio<span class="brand-sub">A little space to find your direction</span></span></div>
+    <div class="header-tools"><button id="language-switch" class="quiet language-switch" data-action="language" aria-label="Switch language"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 12h17M12 3.5c4.3 4.6 4.3 12.4 0 17-4.3-4.6-4.3-12.4 0-17Z" stroke="currentColor" stroke-width="1.4"/></svg><span id="current-language" data-i18n-skip>English</span></button><span id="save-status" class="save-status" role="status">Saved on this browser</span><button class="quiet" data-action="saved">View what’s saved</button><button class="quiet project-settings" data-action="settings" aria-label="Project settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="m9.6 3 .6-1h3.6l.6 2.4 2 .9 2.2-.8 1.8 3.1-1.7 1.6.2 2.2 1.9 1.5-1.2 3.4-2.4-.1-1.6 1.5-.1 2.4-3.5.8-1.2-2-2.1-.5-2 1.3-2.5-2.6 1.2-2-.5-2.1-2-1.2.8-3.5 2.4-.1 1.5-1.6-.1-2.4Z"/><circle cx="12" cy="11.5" r="3"/></svg><span data-i18n-skip>Project settings</span></button></div>
+  </header>
+  <nav id="progress" class="progress" aria-label="Project progress"></nav>
+  <div id="storage-warning" class="notice-wrap" hidden><div class="notice error" role="alert">This browser could not save your project. Export a copy from settings before closing this page.</div></div>
+  <div id="notice" class="notice-wrap" aria-live="polite"></div>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><span>Small observations. Unexpected connections. Your next idea.</span><button class="button footer-guide" data-action="guide">A quick guide</button></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div id="tutorial" hidden></div>
+  <noscript><p>This local prototype needs JavaScript enabled to save and explore your ideas.</p></noscript>
+</body>
+</html>

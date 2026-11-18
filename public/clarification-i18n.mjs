@@ -1,0 +1,57 @@
+const labels = {
+  en: [
+    'Explain this question',
+    'What is unclear? (optional)',
+    'Explain',
+    'Explaining…',
+    'Hide explanation',
+  ],
+  'zh-CN': ['解释一下', '哪里没看懂？（可选）', '帮我解释', '正在解释…', '收起解释'],
+  'zh-TW': ['解釋一下', '哪裡沒看懂？（可選）', '幫我解釋', '正在解釋…', '收起解釋'],
+  ja: ['質問を説明する', 'わからない部分（任意）', '説明する', '説明中…', '説明を閉じる'],
+  ko: ['질문 설명', '이해하기 어려운 부분 (선택)', '설명해 주세요', '설명 중…', '설명 접기'],
+  es: [
+    'Explicar la pregunta',
+    '¿Qué no entiendes? (opcional)',
+    'Explicar',
+    'Explicando…',
+    'Ocultar explicación',
+  ],
+  fr: [
+    'Expliquer la question',
+    'Que ne comprenez-vous pas ? (facultatif)',
+    'Expliquer',
+    'Explication en cours…',
+    'Masquer',
+  ],
+  de: [
+    'Frage erklären',
+    'Was ist unklar? (optional)',
+    'Erklären',
+    'Wird erklärt…',
+    'Erklärung ausblenden',
+  ],
+  pt: [
+    'Explicar a pergunta',
+    'O que não ficou claro? (opcional)',
+    'Explicar',
+    'Explicando…',
+    'Ocultar explicação',
+  ],
+  ru: [
+    'Объяснить вопрос',
+    'Что непонятно? (необязательно)',
+    'Объяснить',
+    'Объясняем…',
+    'Скрыть объяснение',
+  ],
+  it: [
+    'Spiega la domanda',
+    'Cosa non è chiaro? (facoltativo)',
+    'Spiega',
+    'Spiegazione…',
+    'Nascondi spiegazione',
+  ],
+  ar: ['شرح السؤال', 'ما غير الواضح؟ (اختياري)', 'اشرح', 'جارٍ الشرح…', 'إخفاء الشرح'],
+};
+export const clarificationText = (locale, index) => (labels[locale] || labels.en)[index];

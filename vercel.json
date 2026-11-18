@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "",
+  "installCommand": "",
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 300,
+      "includeFiles": "{public,lib}/**"
+    }
+  },
+  "routes": [
+    {
+      "dest": "/api/index",
+      "src": "/(.*)"
+    }
+  ]
+}
