@@ -1,0 +1,8 @@
+.env
+.env.*
+.runtime
+test
+qa
+verification-tests.txt
+node_modules
+.git
