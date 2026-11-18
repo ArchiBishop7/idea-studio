@@ -1,4 +1,4 @@
-dao1# Idea Studio
+# Idea Studio
 
 Idea Studio helps art and design students find a direction for a creative assignment. A student can start with a rough interest, connect two clue cards, and correct an interpretation. Those choices guide the next question and the project directions they can compare.
 
